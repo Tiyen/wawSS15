@@ -14,7 +14,7 @@ header h1 {
     margin-bottom: 5%;
 }
 
-section #homePic {
+#welcome #homePic {
     display: block;
     margin: 0 auto;
     border: solid;
@@ -35,6 +35,19 @@ section #homePic {
 }
 
 #menu {
+    margin: 3% 40% auto 40%;
     border: solid;
-    border-color: black;
+    border-color: #3f48cc;
+}
+
+#menu a:link {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #00a2e8;
+}
+
+#menu a:hover {
+    color: #3f48cc;
 }

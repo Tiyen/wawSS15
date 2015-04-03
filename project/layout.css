@@ -1,46 +1,61 @@
-*{
+/*
+**************************************
+CSS Bereich für die Home.html Datei !!!!
+**************************************
+/*Standard Formatierung der Seite entfernen*/
+* {
     margin: 0;
     padding: 0;
 }
+
+/*Anschaulicheres Format der Website*/
 body {
     margin: 5%;
     background-color: #99d9ea;
 }
 
-header h1 {
-    font-size: 22px;
-    text-align: center;
+/*Überschrift formatiert*/
+header p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
     margin-bottom: 5%;
 }
 
+/*Zentrierung des Bildes*/
 #welcome #homePic {
     display: block;
-    margin: 0 auto;
+    margin:  auto;
     border: solid;
     border-color: #3f48cc;
 }
 
-#welcome #weBooks{
+/*We Books Schrift positionieren */
+#welcome #weBooks {
     position: absolute;
-    padding-left: 8%;
-    padding-top: 10%;
     display: block;
-    margin: 0 auto;
+    margin: 8% 0 0 14%;
     font-size: 72px;
-    font-weight: 900;
+    font-weight: bold;
     color: #3f48cc;
     font-family: Arial, Helvetica, sans-serif;
-    word-spacing: 7em;
+    word-spacing: 6em;
 }
 
+/*Auswahlmenü zentriert und mit Rahmen versehen*/
 #menu {
-    margin: 3% 40% auto 40%;
+    margin: 5% 40% 0 40%;
     border: solid;
     border-color: #3f48cc;
 }
 
-#menu a:link {
+/*Style für die Links im Menü*/
+#menu a {
+    padding:5% 0 5% 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:  bold;
     text-align: center;
     display: block;
     font-size: 18px;
@@ -49,5 +64,33 @@ header h1 {
 }
 
 #menu a:hover {
+    color: black;
+    background-color: #3f48cc;
+}
+
+/*
+*************************************
+*Ende des Bereichs für Home.html !!!!
+*Start des Bereichs für book_entry.html!!!
+*************************************
+*/
+header #bookentry {
     color: #3f48cc;
+}
+
+section #bookInfos {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+section p {
+
+    margin-left: 10%;
+    margin-right: 50%;
+}
+section label {
+    display: block;
+    width: 10em;
+    float: left;
 }

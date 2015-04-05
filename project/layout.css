@@ -74,23 +74,49 @@ header p {
 *Start des Bereichs für book_entry.html!!!
 *************************************
 */
+/*Überschrift für book_entry.html*/
 header #bookentry {
     color: #3f48cc;
 }
 
+/*Formular für Buch anlegen*/
 section #bookInfos {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-section p {
-
-    margin-left: 10%;
-    margin-right: 50%;
+/*Textfeldbeschreibung und Textfeld mit <p> verbunden. <->Ausrichtung der Felder*/
+#bookInfos p {
+    float:right;
+    margin-right: 60%;
 }
-section label {
+/*Aussehen und Position der Labels(Text for den Formularfeldern)*/
+#bookInfos label {
+    padding-bottom: 5%;
     display: block;
     width: 10em;
     float: left;
+}
+
+/*Formatierung der Textfelder. Innenabstand etc...*/
+#bookInfos .txtfield {
+    padding: 2px;
+}
+
+/*Dropdown Menü Ausrichtung und Position des Inhalts*/
+#bookInfos select {
+    width: 12em;
+    text-align: left;
+}
+
+/*Text für die Checkboxes*/
+#bookInfos .boxdescr {
+    float:left;
+}
+
+/*Checkboxen selbst*/
+#bookInfos p .box {
+    display: block;
+    float:left;
 }

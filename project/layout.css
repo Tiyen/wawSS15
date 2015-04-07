@@ -16,6 +16,7 @@ body {
 
 /*Überschrift formatiert*/
 header p {
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 900;
@@ -24,18 +25,18 @@ header p {
 }
 
 /*Zentrierung des Bildes*/
-#welcome #homePic {
+#homePic {
     display: block;
-    margin:  auto;
+    margin: auto;
     border: solid;
     border-color: #3f48cc;
 }
 
 /*We Books Schrift positionieren */
-#welcome #weBooks {
+#weBooks {
     position: absolute;
     display: block;
-    margin: 8% 0 0 14%;
+    margin: 8% 0 0 22%;
     font-size: 72px;
     font-weight: bold;
     color: #3f48cc;
@@ -52,10 +53,10 @@ header p {
 
 /*Style für die Links im Menü*/
 #menu a {
-    padding:5% 0 5% 0;
+    padding: 5% 0 5% 0;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight:  bold;
+    font-weight: bold;
     text-align: center;
     display: block;
     font-size: 18px;
@@ -75,7 +76,7 @@ header p {
 *************************************
 */
 /*Überschrift für book_entry.html*/
-header #bookentry {
+header #bookentry{
     color: #3f48cc;
 }
 
@@ -84,39 +85,55 @@ section #bookInfos {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    margin: auto;
 }
 
-/*Textfeldbeschreibung und Textfeld mit <p> verbunden. <->Ausrichtung der Felder*/
-#bookInfos p {
-    float:right;
-    margin-right: 60%;
-}
-/*Aussehen und Position der Labels(Text for den Formularfeldern)*/
-#bookInfos label {
-    padding-bottom: 5%;
+label {
     display: block;
     width: 10em;
     float: left;
+    color: #3f48cc;
 }
 
-/*Formatierung der Textfelder. Innenabstand etc...*/
-#bookInfos .txtfield {
-    padding: 2px;
+.txtfield {
+    margin-bottom: 6%;
 }
 
-/*Dropdown Menü Ausrichtung und Position des Inhalts*/
-#bookInfos select {
-    width: 12em;
-    text-align: left;
-}
-
-/*Text für die Checkboxes*/
-#bookInfos .boxdescr {
-    float:left;
-}
-
-/*Checkboxen selbst*/
-#bookInfos p .box {
+select {
+    float: left;
     display: block;
-    float:left;
+    width: 13em;
+    margin-bottom: 2%;
+    text-align: right;
 }
+
+.boxdescr {
+    margin-left: 3%;
+    color: black;
+}
+
+.box {
+    float: left;
+    clear: both;
+    margin-left: 40%;
+}
+
+#absenden {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    border: solid;
+    border-color: #3f48cc;
+    background-color: #00a2e8;
+    color: #3f48cc;
+    font-weight: 900;
+    width: 20em;
+    height: 3em;
+}
+
+div {
+    float: left;
+    margin-right: 10%;
+}
+
+

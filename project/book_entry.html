@@ -6,59 +6,71 @@
     <title></title>
 </head>
 <body>
-    <header>
-        <p id="bookentry">Buch anlegen</p>
-    </header>
-    <section id="book">
-        <form id="bookInfos">
-           <p><label for="txt1">Buchtitel</label>
-            <input class="txtfield" id="txt1" name="booktitle" type="text" size="25" maxlength="40"></p>
+<header>
+    <p id="bookentry">Buch anlegen</p>
+</header>
+<section>
+    <form id="bookInfos" method="get" action="http://martinakraus.net/createBookEntry.php">
+        <div>
+            <p><label for="txt1">Buchtitel</label>
+                <input class="txtfield" id="txt1" name="titel" type="text" size="25" maxlength="40"></p>
 
             <p><label for="txt2">Autor</label>
-            <input class="txtfield" id="txt2" name="bookauthor" type="text" size="25" maxlength="40"></p>
+                <input class="txtfield" id="txt2" name="autor" type="text" size="25" maxlength="40"></p>
 
             <p><label for="txt3">ISBN</label>
-            <input class="txtfield" id="txt3" name="ISBN" type="text" size="25" maxlength="40"></p>
+                <input class="txtfield" id="txt3" name="isbn" type="text" size="25" maxlength="40"></p>
 
             <p><label for="txt4">Kapitel</label>
-            <input class="txtfield" id="txt4" name="chapter" type="text" size="25" maxlength="40"></p>
+                <input class="txtfield" id="txt4" name="kapitel" type="text" size="25" maxlength="40"></p>
 
             <p><label for="txt5">Herausgabedatum</label>
-            <input class="txtfield" id="txt5" name="release" type="text" size="25" maxlength="40"></p>
+                <input class="txtfield" id="txt5" name="jahr" type="text" size="25" maxlength="40"></p>
 
             <p><label for="txt6">Auflage</label>
-            <input class="txtfield" id="txt6" name="edition" type="text" size="25" maxlength="40"></p>
+                <input class="txtfield" id="txt6" name="auflage" type="text" size="25" maxlength="40"></p>
 
             <p><label for="dropdownmenu">Art des Buches</label>
-            <select id="dropdownmenu">
-                <option>Hardcover</option>
-                <option>Taschenbuch</option>
-                <option>Roman</option>
-                <option>Hörbuch</option>
-            </select></p>
+                <select name="art" id="dropdownmenu">
+                    <option value="eBook">eBook</option>
+                    <option value="Newspaper">Newspaper</option>
+                    <option value="Taschenbuch">Taschenbuch</option>
+                    <option value="Lexikon">Lexikon</option>
+                    <option value="Hardcover">Hardcover</option>
+                    <option value="Paperback">Paperback</option>
+                </select></p>
 
-            <p><label class="boxdescr" for="check1">Horror</label>
-            <input class="box" id="check1" type="checkbox" name="horror"></p>
+            <input class="box" id="check1" type="checkbox" name="genre" value="Horror">
+            <label class="boxdescr" for="check1">Horror</label>
 
-            <p><label class="boxdescr" for="check2">Psycho</label>
-            <input class="box" id="check2" type="checkbox" name="psycho"></p>
+            <input class="box" id="check2" type="checkbox" name="genre" value="Psycho">
+            <label class="boxdescr" for="check2">Psycho</label>
 
-            <p><label class="boxdescr" for="check3">Krimi</label>
-            <input class="box" id="check3" type="checkbox" name="krimi"></p>
+            <input class="box" id="check3" type="checkbox" name="genre" value="Krimi">
+            <label class="boxdescr" for="check3">Krimi</label>
 
-            <p><label class="boxdescr" for="check4">Doku</label>
-            <input class="box" id="check4" type="checkbox" name="doku"></p>
+            <input class="box" id="check4" type="checkbox" name="genre" value="Doku">
+            <label class="boxdescr" for="check4">Doku</label>
 
-            <p><label class="boxdescr" for="check5">Komödie</label>
-            <input class="box" id="check5" type="checkbox" name="komödie"></p>
+            <input class="box" id="check5" type="checkbox" name="genre" value="Komödie">
+            <label class="boxdescr" for="check5">Komödie</label>
 
-            <p><label class="boxdescr" for="check6">Romanze</label>
-            <input class="box" id="check6" type="checkbox" name="romanze"></p>
-        </form>
-        <form id="personalInfos">
-            <p></p>
+            <input class="box" id="check6" type="checkbox" name="genre" value="Romanze">
+            <label class="boxdescr" for="check6">Romanze</label>
+        </div>
 
-        </form>
-    </section>
+        <div>
+            <p><label for="vname">Dein Vorname</label>
+                <input id="vname" class="txtfield" name="vorname" type="text" size="20"></p>
+
+            <p><label for="nname">Dein Nachname</label>
+                <input id="nname" class="txtfield" name="nachname" type="text" size="20"></p>
+
+            <label for="favorit">Dein Favorit</label>
+            <input id="favorit" type="checkbox" name="filmfavorit" value="">
+        </div>
+            <input type="submit" id="absenden" name="absenden" value="Absenden">
+    </form>
+</section>
 </body>
 </html>

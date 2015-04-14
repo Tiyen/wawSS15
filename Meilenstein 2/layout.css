@@ -28,8 +28,7 @@ header p {
 #homePic {
     display: block;
     margin: auto;
-    border: solid;
-    border-color: #3f48cc;
+    border: solid #3f48cc;
 }
 
 /*We Books Schrift positionieren */
@@ -47,8 +46,7 @@ header p {
 /*Auswahlmenü zentriert und mit Rahmen versehen*/
 #menu {
     margin: 5% 40% 0 40%;
-    border: solid;
-    border-color: #3f48cc;
+    border: solid #3f48cc;
 }
 
 /*Style für die Links im Menü*/
@@ -118,12 +116,11 @@ select {
     margin-left: 40%;
 }
 
-#absenden {
+#send {
     position: absolute;
     bottom: 10%;
     left: 40%;
-    border: solid;
-    border-color: #3f48cc;
+    border: solid #3f48cc;
     background-color: #00a2e8;
     color: #3f48cc;
     font-weight: 900;

@@ -39,8 +39,9 @@
                     <option value="Hardcover">Hardcover</option>
                     <option value="Paperback">Paperback</option>
                 </select></p>
-
-            <input class="box" id="check1" type="checkbox" name="genre" value="Horror">
+            <p><label for="boxContainer">Genre</label></p>
+        <div id="boxContainer">
+            <input class="box" id="check1" type="checkbox" name="genre" value="Horror" checked="checked">
             <label class="boxdescr" for="check1">Horror</label>
 
             <input class="box" id="check2" type="checkbox" name="genre" value="Psycho">
@@ -57,8 +58,8 @@
 
             <input class="box" id="check6" type="checkbox" name="genre" value="Romanze">
             <label class="boxdescr" for="check6">Romanze</label>
-        </div>
-
+            </div>
+            </div>
         <div>
             <p><label for="vname">Dein Vorname</label>
                 <input id="vname" class="txtfield" name="vorname" type="text" size="20"></p>
@@ -69,7 +70,7 @@
             <label for="favorit">Dein Favorit</label>
             <input id="favorit" type="checkbox" name="filmfavorit" value="">
         </div>
-            <input type="submit" id="absenden" name="absenden" value="Absenden">
+            <input type="submit" id="send" name="send" value="Absenden">
     </form>
 </section>
 </body>

@@ -15,7 +15,7 @@ body {
 }
 
 /*Überschrift formatiert*/
-header p {
+header {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -44,13 +44,13 @@ header p {
 }
 
 /*Auswahlmenü zentriert und mit Rahmen versehen*/
-#menu {
+#homeMenu {
     margin: 5% 40% 0 40%;
     border: solid #3f48cc;
 }
 
 /*Style für die Links im Menü*/
-#menu a {
+#homeMenu a {
     padding: 5% 0 5% 0;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -62,7 +62,7 @@ header p {
     background-color: #00a2e8;
 }
 
-#menu a:hover {
+#homeMenu a:hover {
     color: black;
     background-color: #3f48cc;
 }
@@ -73,31 +73,27 @@ header p {
 *Start des Bereichs für book_entry.html!!!
 *************************************
 */
-/*Überschrift für book_entry.html*/
-header #bookentry{
-    color: #3f48cc;
-}
 
 /*Formular für Buch anlegen*/
-section #bookInfos {
+#formularBereich #bookInfos {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: auto;
 }
 
-label {
+#formularBereich label {
     display: block;
     width: 10em;
     float: left;
     color: #3f48cc;
 }
 
-.txtfield {
+#formularBereich .txtfield {
     margin-bottom: 6%;
 }
 
-select {
+#formularBereich select {
     float: left;
     display: block;
     width: 13em;
@@ -105,18 +101,18 @@ select {
     text-align: right;
 }
 
-.boxdescr {
+#formularBereich .boxdescr {
     margin-left: 3%;
     color: black;
 }
 
-.box {
+#formularBereich .box {
     float: left;
     clear: both;
     margin-left: 40%;
 }
 
-#send {
+#formularBereich #send {
     position: absolute;
     bottom: 10%;
     left: 40%;
@@ -128,9 +124,53 @@ select {
     height: 3em;
 }
 
-div {
+#formularBereich div {
     float: left;
     margin-right: 10%;
+}
+
+/*
+*************************************
+*Ende des Bereichs für book_entry.html !!!!
+*Start des Bereichs für book.html!!!
+*************************************
+*/
+#überschrift {
+    color: #3f48cc;
+}
+
+#menuHeader {
+    border:solid #3f48cc thick ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-bottom: 2%;
+    background-color: #00a2e8;
+    margin-bottom: 2%;
+}
+
+#horrorTab {
+    color: black;
+    float: left;
+    display: block;
+    width:50%;
+}
+
+#romanTab {
+    color: black;
+    float:left;
+    width:50%;
+}
+
+#horrorTab:hover {
+    background-color: #3f48cc;
+}
+
+#romanTab:hover {
+    background-color: #3f48cc;
 }
 
 
